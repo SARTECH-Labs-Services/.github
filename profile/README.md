@@ -43,7 +43,7 @@ Law Firm / Enterprise  →  SARTECH Governance Proxy  →  AI Provider
 ### Team
 
 - **Alexandra Sarahni** — CEO & Co-Founder
-- **Oscar de Vos** — CTO & Co-Founder
+- **Oscar Devos** — CTO & Co-Founder
 
 ---
 
