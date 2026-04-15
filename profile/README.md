@@ -28,16 +28,21 @@ We make trust programmable.
 
 - **Pre-execution policy enforcement** — deterministic rule evaluation before any AI action proceeds
 - **Cryptographic evidence bundles** — Ed25519 signed, RFC 3161 timestamped, tamper-evident audit trails
+- **Browser AI governance** — transparent capture of ChatGPT, Claude, and Gemini usage via network proxy
 - **Vendor-agnostic governance kernel** — works across AI providers without lock-in
+- **PII detection** — scan prompts for sensitive data before they reach any AI provider
 - **Privilege-aware architecture** — built for attorney-client privilege, client-matter segregation, and ethical walls
 - **Multi-tenant isolation** — designed for regulated multi-party environments from day one
 
 ### Architecture
 ```
-Law Firm / Enterprise  →  SARTECH Governance Proxy  →  AI Provider
-                              ↓
-                    Policy Engine · PII Scanner
-                    Evidence Signing · Audit Log
+                                                    ┌─────────────────┐
+  API Tools (Copilot, SDKs)  ──→  SARTECH Proxy  ──→  AI Provider API
+                                       ↕
+  Browser AI (ChatGPT, Claude)  ──→  Network Gov  ──→  Session Logging
+                                       ↓
+                              Policy Engine · PII Scanner
+                              Evidence Signing · Audit Log
 ```
 
 ### Team
